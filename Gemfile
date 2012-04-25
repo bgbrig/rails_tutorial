@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 
 group :development, :test do
-	gem 'sqlite3', '1.3.5'
+	gem 'pg', '0.13.2'
 	gem 'rspec-rails', '2.9.0'
+	gem 'guard-rspec', '0.5.5'
 end
 
 # Gems used only for assets and not required
@@ -19,9 +20,15 @@ gem 'jquery-rails', '2.0.0'
 
 group :test do
 	gem 'capybara', '1.1.2'
+	gem 'pg', '0.13.2'
+	gem 'rspec-rails', '2.9.0'
+	gem 'rb-fsevent', '0.9.1'
+	gem 'growl', '1.0.3'
+	gem 'guard-spork', '0.3.2'
+	gem 'spork', '0.9.0'
 end
 
 group :production do
-	gem 'pg', '0.12.2'
+	gem 'pg', '0.13.2'
 end
 
